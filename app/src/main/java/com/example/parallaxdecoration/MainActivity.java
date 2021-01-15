@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView.ItemDecoration itemDecoration = this.lastItemDecoration;
         recycler_view.addItemDecoration(itemDecoration);
-        updateItemDecoration(true);
-        parallaxSize = (float) 50 * 1.0F / (float) 100;
+        updateItemDecoration(true);//背景是否全屏
+        parallaxSize = (float) 50 * 1.0F / (float) 100;//与RecyclerView的视差值
         updateItemDecoration(autoFillBitmap);
     }
 
